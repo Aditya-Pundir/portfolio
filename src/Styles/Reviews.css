@@ -1,0 +1,72 @@
+.review-section-container {
+  background: linear-gradient(45deg, cyan, #fe3cce);
+  padding: 2%;
+}
+.reviews-heading {
+  font-family: "Share Tech Mono", monospace;
+  color: white;
+}
+.reviews-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  justify-content: center;
+}
+.review-image {
+  background-color: white;
+}
+.review {
+  width: 20rem;
+  height: 15rem;
+  padding: 1%;
+  color: white;
+  background-color: rgb(0 0 0 / 0.5);
+  font-family: "Source Sans Pro", sans-serif;
+  box-shadow: 1rem 1rem 2rem 1rem rgb(0 0 0 / 0.3);
+}
+/* .client {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+} */
+.client-image {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-top: -50%;
+  border-radius: 50%;
+}
+.client-name {
+  font-family: "Share Tech Mono", monospace;
+}
+.stars {
+  display: flex;
+}
+.star {
+  background-color: gold;
+  height: 1rem;
+  width: 1rem;
+  clip-path: polygon(
+    50% 5%,
+    61% 40%,
+    98% 40%,
+    68% 62%,
+    79% 96%,
+    50% 75%,
+    21% 96%,
+    32% 62%,
+    2% 40%,
+    39% 40%
+  );
+}
+
+@media (max-width: 1100px) {
+  .reviews-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1750px) {
+  .client-image {
+    margin-top: 0;
+  }
+}
