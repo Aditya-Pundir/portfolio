@@ -27,8 +27,11 @@ function Banner() {
           </a>
         </div>
       </div>
+      <div className="falcon-container">
+        <img src="logo512.png" alt="Falcon Adi" className="falcon-logo" />
+      </div>
       <div className="banner-image">
-        <img src="1.png" alt="Aditya Pundir" />
+        <img src="image.png" alt="Aditya Pundir" className="profile-image" />
       </div>
     </div>
   );

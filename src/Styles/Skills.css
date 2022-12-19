@@ -1,18 +1,20 @@
 .skill-section-container {
   padding: 2%;
+  background-color: var(--black);
+  border-top: 2px solid var(--primary);
 }
 .skills-heading {
   font-family: "Share Tech Mono", monospace;
-  color: white;
+  color: var(--secondary);
 }
 .skills-list {
   font-family: "Source Sans Pro", sans-serif;
-  color: white;
+  color: var(--secondary);
   list-style: none;
 }
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 2rem;
   grid-gap: 4rem;
   place-items: center;
@@ -23,11 +25,27 @@
   align-items: center;
   justify-content: center;
   gap: 0.2rem;
-  color: white;
+  color: var(--secondary);
   font-family: "Source Sans Pro", sans-serif;
 }
 .skill {
   height: 5rem;
   width: 5rem;
   position: relative;
+}
+
+@media (max-width: 900px) {
+  .skills-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .skills-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

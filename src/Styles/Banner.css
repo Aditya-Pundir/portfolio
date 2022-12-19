@@ -4,8 +4,7 @@
   justify-content: space-evenly;
   width: 100%;
   height: 80vh;
-  /* background-image: url("../../public/banner.jpeg"); */
-  background: conic-gradient(cyan, #fe3cce);
+  background: black;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,7 +17,7 @@
   gap: 1rem;
 }
 .social-media-link {
-  color: white;
+  color: var(--secondary);
   text-decoration: none;
 }
 .banner-text {
@@ -30,13 +29,26 @@
   overflow: hidden;
   height: 20rem;
   width: 20rem;
-  background: rgb(255 255 255 / 0.3);
   position: relative;
   animation: floatLeft 1s ease-out;
+  box-shadow: 0 0 1.5rem 1rem var(--primary);
+}
+.falcon-container {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 10rem;
+  width: 10rem;
+  animation: floatLeft 1s ease-out;
+  box-shadow: 0 0 1rem 0.5rem var(--primary);
+  margin-top: 5rem;
+}
+.falcon-logo {
+  height: 100%;
+  width: 100%;
 }
 .banner-hello {
   font-family: "Source Sans Pro", sans-serif;
-  color: cyan;
+  color: var(--secondary);
   position: relative;
   animation: floatRight 0.5s ease-out;
 }
@@ -44,28 +56,43 @@
   font-family: "Share Tech Mono", monospace;
   font-weight: bold;
   font-size: xxx-large;
-  color: white;
+  color: var(--primary);
   position: relative;
   animation: floatRight 1s ease-out;
 }
 .banner-job {
   font-family: "Source Sans Pro", sans-serif;
-  color: white;
+  color: var(--secondary);
   position: relative;
   animation: floatRight 2s ease-out;
 }
+.profile-image {
+  background: linear-gradient(90deg, rgb(139, 139, 139), rgb(32, 32, 32));
+}
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .banner-container {
     flex-direction: column-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .banner-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .banner-image {
+    height: 15rem;
+    width: 15rem;
+  }
+  .profile-image {
+    transform: scale(0.8);
+    margin-left: -2.5rem;
+    margin-top: -2.5rem;
   }
 }
 @media (max-width: 400px) {
   .banner-name {
     font-size: xx-large;
-  }
-  .banner-image {
-    transform: scale(80%);
   }
 }
 

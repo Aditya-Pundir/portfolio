@@ -1,3 +1,7 @@
+.projects {
+  background-color: var(--black);
+  border-top: 2px solid var(--primary);
+}
 .projects-heading {
   padding: 1% 2%;
   font-family: "Share Tech Mono", monospace;
@@ -5,7 +9,7 @@
 }
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 2rem;
   grid-gap: 4rem;
   place-items: center;
@@ -26,9 +30,15 @@ a {
   text-align: right;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  box-shadow: 1rem 1rem 2rem 1rem rgb(0 0 0 / 0.5);
+  /* box-shadow: 1rem 1rem 2rem 1rem rgb(0 0 0 / 0.5); */
 }
 .project:hover {
-  transform: scale(1.1);
-  box-shadow: 2rem 1rem 2rem 1rem rgb(0 0 0 / 0.5);
+  /* transform: scale(1.1); */
+  box-shadow: 0 0 1rem 0.1rem var(--primary);
+}
+
+@media (max-width: 900px) {
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

@@ -2,5 +2,10 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(90deg, pink, purple);
+  background-color: var(--black);
+}
+:root {
+  --primary: rgb(255, 187, 93);
+  --secondary: white;
+  --black: black;
 }

@@ -4,7 +4,7 @@ import React from "react";
 
 function Projects() {
   return (
-    <div>
+    <div className="projects">
       <h1 className="projects-heading">
         Projects <i class="fa fa-link"></i>
       </h1>
@@ -20,21 +20,12 @@ function Projects() {
           </div>
         </a>
         <a
-          href="https://mealsidea.netlify.app/"
+          href="https://play.google.com/store/apps/details?id=com.aditya_pundir.Rentenant"
           target="_blank"
           rel="noreferrer"
         >
           <div className="project">
-            <h3>Meals Idea</h3>
-          </div>
-        </a>
-        <a
-          href="https://haridwar-smart-city.netlify.app/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="project">
-            <h3>Haridwar Smart City</h3>
+            <h3>Rentenant (Android App)</h3>
           </div>
         </a>
       </div>

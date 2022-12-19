@@ -1,5 +1,6 @@
 .review-section-container {
-  background: linear-gradient(45deg, cyan, #fe3cce);
+  background: var(--black);
+  border-top: 2px solid var(--primary);
   padding: 2%;
 }
 .reviews-heading {
@@ -7,10 +8,9 @@
   color: white;
 }
 .reviews-container {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* display: flex; */
 }
 .review-image {
   background-color: white;
@@ -18,11 +18,16 @@
 .review {
   width: 20rem;
   height: 15rem;
-  padding: 1%;
+  padding: 5%;
   color: white;
   background-color: rgb(0 0 0 / 0.5);
   font-family: "Source Sans Pro", sans-serif;
-  box-shadow: 1rem 1rem 2rem 1rem rgb(0 0 0 / 0.3);
+  /* box-shadow: 1rem 1rem 2rem 1rem rgb(0 0 0 / 0.3); */
+  transition: all 0.3s ease-in-out;
+}
+.review:hover {
+  /* transform: scale(1.01); */
+  box-shadow: 0 0 1rem 0.2rem var(--primary);
 }
 /* .client {
   display: flex;
@@ -32,7 +37,6 @@
 .client-image {
   height: 3.5rem;
   width: 3.5rem;
-  margin-top: -50%;
   border-radius: 50%;
 }
 .client-name {
@@ -65,8 +69,8 @@
   }
 }
 
-@media (max-width: 1750px) {
-  .client-image {
-    margin-top: 0;
+@media (max-width: 800px) {
+  .reviews-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
