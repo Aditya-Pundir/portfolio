@@ -71,6 +71,9 @@
 }
 
 @media (max-width: 1000px) {
+  .banner-name {
+    font-size: x-large;
+  }
   .banner-container {
     flex-direction: column-reverse;
   }
@@ -86,11 +89,6 @@
     transform: scale(0.8);
     margin-left: -2.5rem;
     margin-top: -2.5rem;
-  }
-}
-@media (max-width: 400px) {
-  .banner-name {
-    font-size: x-large;
   }
 }
 
