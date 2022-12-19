@@ -74,8 +74,6 @@
   .banner-container {
     flex-direction: column-reverse;
   }
-}
-@media (max-width: 500px) {
   .banner-container {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -92,7 +90,7 @@
 }
 @media (max-width: 400px) {
   .banner-name {
-    font-size: xx-large;
+    font-size: x-large;
   }
 }
 

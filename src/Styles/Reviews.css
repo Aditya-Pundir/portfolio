@@ -16,7 +16,7 @@
   background-color: white;
 }
 .review {
-  width: 20rem;
+  max-width: 20rem;
   height: 15rem;
   padding: 5%;
   color: white;
