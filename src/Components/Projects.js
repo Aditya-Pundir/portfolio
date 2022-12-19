@@ -14,11 +14,6 @@ function Projects() {
             <h3>Nano Bookkeepers</h3>
           </div>
         </a>
-        <a href="https://newsmonkey.world/" target="_blank" rel="noreferrer">
-          <div className="project">
-            <h3>News Monkey</h3>
-          </div>
-        </a>
         <a
           href="https://play.google.com/store/apps/details?id=com.aditya_pundir.Rentenant"
           target="_blank"
