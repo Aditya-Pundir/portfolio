@@ -5,8 +5,8 @@ import React from "react";
 function Footer() {
   return (
     <div className="footer-container">
-      <i class="fa fa-linkedin"></i>
-      <i class="fa fa-envelope"></i>
+      <i className="fa fa-linkedin"></i>
+      <i className="fa fa-envelope"></i>
     </div>
   );
 }

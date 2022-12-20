@@ -6,7 +6,7 @@ function Projects() {
   return (
     <div className="projects">
       <h1 className="projects-heading">
-        Projects <i class="fa fa-link"></i>
+        Projects <i className="fa fa-link"></i>
       </h1>
       <div className="projects-container">
         <a href="https://nanobookkeepers.com/" target="_blank" rel="noreferrer">

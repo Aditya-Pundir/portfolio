@@ -15,7 +15,7 @@ function Banner() {
             rel="noreferrer"
             className="social-media-link"
           >
-            <i class="fa fa-linkedin"></i>
+            <i className="fa fa-linkedin"></i>
           </a>
           <a
             href="mailto:adityapundir2k@gmail.com"
@@ -23,7 +23,7 @@ function Banner() {
             rel="noreferrer"
             className="social-media-link"
           >
-            <i class="fa fa-envelope"></i>
+            <i className="fa fa-envelope"></i>
           </a>
         </div>
       </div>

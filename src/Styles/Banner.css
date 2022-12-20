@@ -5,10 +5,6 @@
   width: 100%;
   height: 80vh;
   background: black;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .social-media-links {
   display: flex;
@@ -26,25 +22,26 @@
 }
 .banner-image {
   border-radius: 50%;
-  overflow: hidden;
-  height: 20rem;
-  width: 20rem;
-  position: relative;
   animation: floatLeft 1s ease-out;
   box-shadow: 0 0 1.5rem 1rem var(--primary);
 }
+.profile-image {
+  clip-path: circle(50%);
+  background: linear-gradient(90deg, rgb(139, 139, 139), rgb(32, 32, 32));
+}
 .falcon-container {
   border-radius: 50%;
-  overflow: hidden;
-  height: 10rem;
-  width: 10rem;
+  /* overflow: hidden; */
+  /* height: 10rem;
+  width: 10rem; */
   animation: floatLeft 1s ease-out;
   box-shadow: 0 0 1rem 0.5rem var(--primary);
   margin-top: 5rem;
 }
 .falcon-logo {
-  height: 100%;
-  width: 100%;
+  clip-path: circle(50%);
+  height: 10rem;
+  width: 10rem;
 }
 .banner-hello {
   font-family: "Source Sans Pro", sans-serif;
@@ -65,9 +62,6 @@
   color: var(--secondary);
   position: relative;
   animation: floatRight 2s ease-out;
-}
-.profile-image {
-  background: linear-gradient(90deg, rgb(139, 139, 139), rgb(32, 32, 32));
 }
 
 @media (max-width: 1000px) {
