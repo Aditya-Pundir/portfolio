@@ -85,6 +85,16 @@
     margin-top: -2.5rem;
   }
 }
+@media (max-height: 800px) {
+  .banner-container {
+    height: 100vh;
+  }
+}
+@media (max-height: 630px) {
+  .banner-container {
+    height: 120vh;
+  }
+}
 
 @keyframes floatRight {
   from {
